@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "meniny": "apps/meniny",
+    "meniny-e2e": "apps/meniny-e2e"
+  }
+}
