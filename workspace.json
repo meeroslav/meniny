@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "calendar-data": "libs/calendar-data",
     "meniny": "apps/meniny",
     "meniny-e2e": "apps/meniny-e2e",
     "meniny-web": "apps/meniny-web"
