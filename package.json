@@ -5,12 +5,17 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "postinstall": "remix setup node"
   },
   "private": true,
   "dependencies": {
+    "@remix-run/react": "^1.0.6",
+    "@remix-run/serve": "^1.0.6",
     "react": "17.0.2",
+    "react-dom": "^17.0.2",
     "react-native": "0.67.2",
+    "remix": "^1.0.6",
     "tslib": "^2.0.0"
   },
   "devDependencies": {
@@ -21,6 +26,7 @@
     "@nrwl/linter": "13.8.3",
     "@nrwl/nx-cloud": "latest",
     "@nrwl/react-native": "13.8.3",
+    "@nrwl/remix": "^13.7.1",
     "@nrwl/tao": "13.8.3",
     "@nrwl/web": "13.8.3",
     "@nrwl/workspace": "13.8.3",
@@ -28,12 +34,14 @@
     "@react-native-community/cli": "7.0.1",
     "@react-native-community/cli-platform-android": "7.0.1",
     "@react-native-community/cli-platform-ios": "7.0.1",
+    "@remix-run/dev": "^1.0.6",
     "@testing-library/jest-dom": "5.16.2",
     "@testing-library/jest-native": "4.0.4",
     "@testing-library/react-native": "9.0.0",
     "@types/jest": "27.0.2",
     "@types/node": "16.11.7",
     "@types/react": "17.0.30",
+    "@types/react-dom": "^17.0.9",
     "@types/react-native": "0.66.15",
     "@typescript-eslint/eslint-plugin": "~5.10.0",
     "@typescript-eslint/parser": "~5.10.0",
@@ -58,5 +66,8 @@
     "react-test-renderer": "17.0.2",
     "ts-jest": "27.0.5",
     "typescript": "~4.5.2"
-  }
+  },
+  "workspaces": [
+    "libs/*"
+  ]
 }
